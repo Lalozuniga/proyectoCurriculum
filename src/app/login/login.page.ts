@@ -15,7 +15,7 @@ export class LoginPage implements OnInit {
   constructor(private navController:NavController, private alertController:AlertController) { }
   ngOnInit() {
   }
-  showPassword(){
+  togglePassword(){
     this.showPass = !this.showPass;
   }
   async mandarMensaje(mensaje:string,titulo:string){

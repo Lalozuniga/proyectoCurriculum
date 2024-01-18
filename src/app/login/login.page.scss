@@ -1,7 +1,18 @@
 #container{
     text-align: center;
     position: absolute;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px -1px rgb(0,0,0,0.2);
     left: 15%;
     right: 15%;
     top: 40%;
+}
+ion-item:hover{
+    --background: var(--login-color);
+    #icono{
+        visibility: visible;
+    }
+}
+#icono{
+    visibility: hidden;
 }
