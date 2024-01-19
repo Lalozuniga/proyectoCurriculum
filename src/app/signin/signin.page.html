@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>signin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">signin</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<!-- Inicia formulario -->
+  <div>
+    <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input></ion-input>
+      <ion-buttons slot="end" id="eyeicon1">
+        <ion-button (click)="togglePass('a')">
+          <ion-icon slot="icon-only" [name]="password1 ? 'eye-off' : 'eye'"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Verifica la contraseña</ion-label>
+      <ion-input></ion-input>
+      <ion-buttons slot="end" id="eyeicon1">
+        <ion-button (click)="togglePass('b')">
+          <ion-icon slot="icon-only" [name]="password2 ? 'eye-off' : 'eye'"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <div>
+      <ion-checkbox labelPlacement="end" color="success"></ion-checkbox>
+      <ion-text>Aceptar terminos y condiciones</ion-text>
+    </div>
+    <ion-button>Registrarse!</ion-button>
+    <ion-text color="danger" id="tyc">{{mensaje}}</ion-text>
+    <ion-text>Ya tienes una cuenta? Inicia Sesion aquí</ion-text>
+  </div>
+</ion-content>
