@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'signin',
     loadChildren: () => import('./signin/signin.module').then( m => m.SigninPageModule)
   },
+  {
+    path: 'infinitescroll',
+    loadChildren: () => import('./infinitescroll/infinitescroll.module').then( m => m.InfinitescrollPageModule)
+  },
 ];
 
 @NgModule({

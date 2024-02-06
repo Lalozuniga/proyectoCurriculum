@@ -22,25 +22,28 @@
     </ion-item>
     <ion-item>
       <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [type]="p1?'password' : 'text'"></ion-input>
       <ion-buttons slot="end" id="eyeicon1">
-<!-- 
+
         <ion-button (click)="togglePass('a')">
-          <ion-icon slot="icon-only" [name]="password1 ? 'eye-off' : 'eye'"></ion-icon>
+          <ion-icon slot="icon-only"
+          [name]="p1?'eye-off':'eye'"></ion-icon>
           
-        </ion-button> -->
+        </ion-button>
 
       </ion-buttons>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Verifica la contraseña</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [type]="p2?'password' : 'text'"></ion-input>
       <ion-buttons slot="end" id="eyeicon1">
-<!-- 
+
         <ion-button (click)="togglePass('b')">
-          <ion-icon slot="icon-only" [name]="password2 ? 'eye-off' : 'eye'"></ion-icon>
+          <ion-icon slot="icon-only"
+          [name]="p2?'eye-off':'eye'"></ion-icon>
+          
         </ion-button>
-         -->
+
       </ion-buttons>
     </ion-item>
     <div id="tyc">

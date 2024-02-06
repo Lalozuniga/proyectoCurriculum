@@ -6,7 +6,7 @@
     right: 5%;
     top: 25%;
     padding: 20px;
-    background: #BB86FC;
+    background: #6e45a1;
     box-shadow: 0 4px 5px -1px rgba(255, 255, 255, 0.2);
 }
 ion-item{
@@ -15,12 +15,28 @@ ion-item{
     padding: 3px;
 
 }
+
+#eyeicon1{
+    visibility: hidden;
+}
 ion-item:hover{
     --background: var(--login-color);
     #icono{
         visibility: visible;
     }
+
+    #eyeicon1{
+        visibility: visible;
+    }
+
 }
 #icono{
     visibility: hidden;
+}
+@media (min-width: 768px) {
+    #container{
+        left: 30%;
+        right: 30%;
+        top: 10%;
+    }
 }

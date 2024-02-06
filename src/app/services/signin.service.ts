@@ -8,7 +8,7 @@ import 'firebase';
 })
 export class SigninService {
 
-  async signinAuth(p: string, u: string, m: string) {
+  async signInAuth(p: string, u: string, m: string) {
 
     try {
       const res = await firebase.auth().createUserWithEmailAndPassword(m, p);
@@ -25,7 +25,7 @@ export class SigninService {
   mailVer(m:string) {
 
   }
-  passCheck(p1:string, pz:string) {
+  passCheck(p1:string, p2:string) {
 
   }
 
