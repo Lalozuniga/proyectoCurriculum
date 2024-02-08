@@ -23,7 +23,7 @@ export class LoginserviceService {
   //aqui termina loginfun
   //!'/[a-zA-Z0-9_-]+@+[a-zA-Z0-9_-]+[a-zA-Z]{2,}/'
   async uChecker(u:string){
-    return /^[a-zA-Z0-9_@.-]+$/.test(u);
+    return /^[a-zA-Z0-9]+@+[a-zA-Z0-9_-]+[a-zA-Z]{2,}/.test(u);
 }
 async pChecker(p:string){
   if(p.length<8 || !/[A-Za-z0-9-=!-_]/.test(p)){

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SigninService } from '../services/signin.service';
+import { RedireccionamientoService } from '../services/redireccionamiento.service';
 
 @Component({
   selector: 'app-signin',
@@ -15,7 +16,12 @@ export class SigninPage implements OnInit {
 
   p1:boolean = true;
   p2:boolean = true;
-  constructor(private signIn:SigninService) { }
+  constructor(private signIn:SigninService,
+    private redireccionamiento:RedireccionamientoService) { }
+
+  nav(data:string){
+    this.redireccionamiento.redireccion(data)
+  }
 
   ngOnInit() {}
 

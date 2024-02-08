@@ -1,6 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>signin</ion-title>
+    <ion-buttons>
+      <ion-button (click)="nav('/home')">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+      <ion-button (click)="nav('/signin')">
+        Registrate
+      </ion-button>
+      <ion-button (click)="nav('/login')">
+        Iniciar sesion
+      </ion-button>
+      <ion-button (click)="nav('/infinitescroll')">
+        Scroll
+      </ion-button>
+      
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

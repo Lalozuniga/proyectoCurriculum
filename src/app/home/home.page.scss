@@ -25,3 +25,64 @@
 #container a {
   text-decoration: none;
 }
+//aqui colocare el css del cv
+.containerinicio{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+.left{
+  background: linear-gradient(rgb(172, 122, 83), rgba(255, 255, 255, 0.45));
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.left h1{
+  color: #fff;
+  font-size: 50px;
+}
+.left p{
+  color: #fff;
+  font-size: 20px;
+}
+.left a{
+  border-radius: 25px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 10px 50px;
+  transition: background 1s;
+  color: #fff;
+}
+.left a:hover{
+  background: #fff;
+  color: #046cea;
+}
+
+.right{
+  background: linear-gradient(rgba(72, 96, 185, 0.5), rgba(255, 255, 255, 0.45));
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.right h1{
+  color: #fff;
+  font-size: 50px;
+}
+.right p{
+  color: #fff;
+  font-size: 20px;
+}
+.right a{
+  border-radius: 25px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 10px 50px;
+  transition: background 1s;
+  color: #fff;
+}
+.right a:hover{
+  background: #fff;
+  color: #046cea;
+}
