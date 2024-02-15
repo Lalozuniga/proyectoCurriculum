@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Inicio
+      Curriculum
     </ion-title>
     <ion-buttons>
       <ion-button (click)="nav('/home')">
@@ -27,23 +27,51 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div class="containerinicio">
+  <div class="containerinicio fondo">
         
     <div class="left">
-      <div>
-        <h1>Bienvenidos</h1>
-        <p>Descubre nuevos platillos</p>
-        <a href="./recetas.php">Descubre Recetas</a>
-      </div>
+      <div class="profile-card">
+        <div class="img">
+            <img src="../../assets/foto-formal.avif" alt="profile-img"/>
+        </div>
+        <div class="caption">
+            <h3>Eduardo Zuñiga</h3>
+            <p>Junior Developer</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i><ion-icon name="logo-facebook"></ion-icon></i></a>
+                <a href="https://github.com/Lalozuniga"><i><ion-icon name="logo-github"></ion-icon></i></a>
+                <a href="https://www.instagram.com/"><i><ion-icon name="logo-instagram"></ion-icon></i></a>
+                <a href="https://www.linkedin.com/in/eduardo-zuñiga-2b63b42a8"><i><ion-icon name="logo-linkedin"></ion-icon></i></a>
+            </div>
+        </div>
+    </div>
     </div>
 
     <div class="right">
       <div>
-      <h1>No tienes una cuenta?</h1>
-      <p>Crea una y empieza a votar por el platillo estrella de la semana</p>
-      <a href="./login.php">Crea tu cuenta</a>
+      <h1>Welcome</h1>
+      <p>Hi There, my name is Eduardo, i'm a technology student <br>
+        I am a university student with the vision of wanting to improve my skills while creating applications that improve people's lives. I am determined, creative and focused on objectives.</p>
+      <br>
+      <a href="https://github.com/Lalozuniga">Check my Github <i class="fab fa-facebook"></i></a>
     </div>
   </div>
   </div>
+  <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+  </svg></div>
+  
+  <section id="skills" class="container">
+    <div class="habilidades">
+      <h1>My skills <i class="fa-solid fa-heart"></i></h1>
+      <p>I consider myself a creative guy, but my goal is to find a way to be more productive with who I am.</p>
+      <div class="navmenu">
+        <button (click)="toggleMenu()">Show</button>
+        <ul #menuList>
+          <li *ngFor="let skill of skills; let i = index" [style.--i]="i + 1"><a href="">{{ skill }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
 </ion-content>
