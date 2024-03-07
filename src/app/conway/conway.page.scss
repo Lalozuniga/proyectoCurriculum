@@ -1,0 +1,26 @@
+*{
+  
+  justify-content: center;
+}
+#tablero{
+  width: 100%;
+  height: 100%;
+  margin: 1vh;
+  margin-top: 10px;
+  
+}
+#fila{
+  display: flex;
+}
+#celula1{
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  background-color: #7061f1;
+}
+#celula0{
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  background-color: #f16161;
+}

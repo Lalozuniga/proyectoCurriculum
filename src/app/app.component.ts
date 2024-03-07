@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { RedireccionamientoService } from './services/redireccionamiento.service';
+import { concat } from 'rxjs';
+RedireccionamientoService
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,16 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  titulo:string='home';
+  constructor(private redireccionamiento:RedireccionamientoService) {}
+
+  onIonWillEnter(){
+    
+  }
+  nav(data:string){
+    this.redireccionamiento.redireccion(data);
+    this.titulo=data.slice(1,data.length)
+  }
+
+
 }

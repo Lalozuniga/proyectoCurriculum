@@ -1,6 +1,6 @@
-<ion-app>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>{{titulo}}</ion-title>
+    <ion-title>conway</ion-title>
     <ion-buttons>
       <ion-button (click)="nav('/home')">
         <ion-icon slot="icon-only" name="home"></ion-icon>
@@ -20,11 +20,22 @@
       <ion-button (click)="nav('/algoritmos-simples')">
         Algoritmos simples
       </ion-button>
-      <ion-button (click)="nav('/api-weather')">
-        Clima
-      </ion-button>
     </ion-buttons>
     
   </ion-toolbar>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">conway</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="tablero">
+    <!--Aquí va el contenido-->
+    <div id="fila" *ngFor="let fila of tablero;let i = index">
+      <div [id]="'celula'+celula" *ngFor="let celula of fila"></div>
+    </div>
+  </div>
+
+</ion-content>

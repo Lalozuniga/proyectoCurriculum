@@ -36,6 +36,18 @@ const routes: Routes = [
     path: 'formulario',
     loadChildren: () => import('./formulario/formulario.module').then( m => m.FormularioPageModule)
   },
+  {
+    path: 'conway',
+    loadChildren: () => import('./conway/conway.module').then( m => m.ConwayPageModule)
+  },
+  {
+    path: 'algoritmos-simples',
+    loadChildren: () => import('./algoritmos-simples/algoritmos-simples.module').then( m => m.AlgoritmosSimplesPageModule)
+  },
+  {
+    path: 'api-weather',
+    loadChildren: () => import('./api-weather/api-weather.module').then( m => m.ApiWeatherPageModule)
+  },
 ];
 
 @NgModule({
