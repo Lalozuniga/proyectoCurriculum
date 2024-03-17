@@ -13,11 +13,13 @@ export class AppComponent {
   constructor(private redireccionamiento:RedireccionamientoService) {}
 
   onIonWillEnter(){
-    
+    //this.titulo = (localStorage.getItem('title'))?localStorage.getItem('title'):this.titulo;
+  
   }
   nav(data:string){
     this.redireccionamiento.redireccion(data);
     this.titulo=data.slice(1,data.length)
+    //localStorage.setItem('asd', JSON.stringify(data));
   }
 
 

@@ -10,4 +10,32 @@
       <ion-title size="large">Api-Weather</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div id="structure">
+    <form class="selection-card" method="POST" (submit)="submitweather(City,country)">
+      <input type="text" placeholder="....city" class="get-weather" #City>
+      <span>AND</span>
+      <select type="text" placeholder="Country" class="get-weather" #country>
+      <option *ngFor="let cpais of cpaises" [value]="cpais.cca2">{{cpais.name.common}}</option>
+      </select>
+      <!-- <span>Or</span>
+      <button class="btn-primary">Get my location</button> -->
+
+      <button class="btn-primary search" method="submit" (click)="loading('Validando datos')">Search</button>
+    </form>
+    <div class="weather-card">
+      <div class="weather-icon">
+        <ion-icon name="rainy-outline"></ion-icon>
+      </div>
+
+      <div class="weather-info" *ngIf="weather">
+        <h2 id="Nombre">{{weather.name}}, {{ weather.sys.country }}</h2>
+        <h3 id="Estado">{{weather.weather[0].description}}</h3>
+        <div class="temperature">
+          <h1 id="grados">{{weather.main.temp}}&deg;F</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </ion-content>

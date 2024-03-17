@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'api-weather',
     loadChildren: () => import('./api-weather/api-weather.module').then( m => m.ApiWeatherPageModule)
   },
+  {
+    path: 'memorama',
+    loadChildren: () => import('./memorama/memorama.module').then( m => m.MemoramaPageModule)
+  },
 ];
 
 @NgModule({
