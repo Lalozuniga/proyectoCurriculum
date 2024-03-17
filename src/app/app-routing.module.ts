@@ -52,6 +52,10 @@ const routes: Routes = [
     path: 'memorama',
     loadChildren: () => import('./memorama/memorama.module').then( m => m.MemoramaPageModule)
   },
+  {
+    path: 'to-do-list',
+    loadChildren: () => import('./to-do-list/to-do-list.module').then( m => m.ToDoListPageModule)
+  },
 ];
 
 @NgModule({
