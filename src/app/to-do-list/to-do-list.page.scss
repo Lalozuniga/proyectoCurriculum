@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    padding: 2px;
+}
+.wrapper{
+    width: 100%;
+    min-height: 960px;
+}
+.wrapper .align{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.wrapper .app{
+    width: auto;
+    min-height: 200px;
+    margin: 0 auto;
+    border-radius: 22px;
+    background: #fff;
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+    letter-spacing: -1px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    -webkit-backface-visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select: none;
+
+}
+.wrapper .app .info{
+    position: relative;
+    height: 170px;
+    width: auto;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    background: linear-gradient(135deg, rgba(158, 15, 184, 0.7) -10px, rgba(5, 232, 255, 0.8) 180%),
+    url('https://static.vecteezy.com/system/resources/previews/000/101/253/non_2x/vector-free-abstract-background-1.jpg');
+    background-size: cover;
+}
+.wrapper .app .info .date{
+    position: relative;
+    width: 100%;
+    padding: 11px 0 5px 0;
+}
+.wrapper .app .info .date #day,
+.wrapper .app .info .date #month{
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+}
+.wrapper .app .info .date #month{
+    font-size: 16px;
+}
+.wrapper .app .info .date #today{
+    font-weight: bold;
+}
+.wrapper .app .info .info-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 40px auto 0 auto;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2); 
+}
+
+.wrapper .app .info .info-bottom .left,
+.wrapper .app .info .info-bottom .middle,
+.wrapper .app .info .info-bottom .right {
+    flex: 1;
+    text-align: center;
+}
+
+.wrapper .app .info .info-bottom .middle {
+    flex: 1; /* Haciendo que este div ocupe más espacio para centrar su contenido */
+}
+
+.wrapper .app .info .info-bottom #count,
+.wrapper .app .info .info-bottom #tasks,
+.wrapper .app .info .info-bottom #count_done,
+.wrapper .app .info .info-bottom #tasks_done,
+.wrapper .app .info .info-bottom #remaining_done,
+.wrapper .app .info .info-bottom #remaining_tasks{
+    margin-top: 11px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.wrapper .app .info .info-bottom #tasks,
+.wrapper .app .info .info-bottom #tasks_done,
+.wrapper .app .info .info-bottom #remaining_tasks{
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: -2px;
+}
+.wrapper .app ul{
+    height: 100%;
+    margin: 10px auto 10px auto;
+}
+.wrapper .app ul #today2{
+    width: 100%;
+    height: 52px;
+    margin: 10px auto;
+    font-size: 18px;
+    text-align: center;
+    color: #636363;
+    line-height: 52px;
+}
+.wrapper .app ul li{
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin: 10px auto;
+    width: 92%;
+    min-height: 37px;
+    line-height: 37px;
+    color: #636363;
+    transition: all ease-in-out 0.35s;
+}
+.wrapper .app ul li.lihiden{
+ //   opacity: 0;
+}
+.wrapper .app ul li a{
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+    color: #636363;
+    text-decoration: none;
+}
+.wrapper .app ul li a i{
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    transition: all ease-in-out 0.5s;
+    font-size: 20px;
+    font-weight: bold;
+}
+.wrapper .app ul li a .mark{
+    color: #744bc0;
+}
+.wrapper .app ul li a .mark-alt{
+    color: #636363;
+}
+.wrapper .app ul li a:hover > i{
+    color: #744bc0;
+}
+.wrapper .app ul li .right{
+    width: 88%;
+    height: 100%;
+    display: inline-block;
+    margin: -3px auto 0 auto;
+}
+.wrapper .app ul li .right p{
+    display: inline-block;
+    width: 90%;
+    height: 28%;
+    word-wrap: break-word;
+    line-height: 28px;
+    outline: none;
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    transition: all ease-in-out 0.25s;
+
+}
+.wrapper.app ul li .right p span{
+    cursor:text;
+}
+.wrapper.app ul li .right .line-through{
+    color: #b3b3b3;
+    text-decoration: line-through;
+    font-size: italic;
+    transform: translate(7px);
+}

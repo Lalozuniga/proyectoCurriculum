@@ -10,4 +10,77 @@
       <ion-title size="large">To-do_list</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="body">
+    <div class="wrapper">
+      <div class="align">
+
+        <div class="app">
+          <div class="info">
+            <div class="date">
+              <p id="day"><span id="today">Sunday,</span><span id="daymonth"> 30th</span></p>
+              <p id="month">January</p>
+            </div>
+            <div class="info-bottom">
+              <div class="left">
+                <p id="count">7</p>
+                <p id="tasks">Total</p>
+              </div>
+              <div class="middle">
+                <p id="remaining_done">5</p>
+                <p id="remaining_tasks">Remaining</p>
+              </div>
+              <div class="right">
+                <p id="count_done">2</p>
+                <p id="tasks_done">Done</p>
+              </div>
+            </div>
+          </div>
+  
+          <ul>
+
+            <p id="today2"><strong>Tasks</strong> for today</p>
+            <li class="lihiden">
+              <a href="" class="check_button" onmousedown="return false">
+                <i class="fa fa-check-circle mark" aria-hidden="true"></i>
+              </a>
+              <div class="right">
+                <p contenteditable="true">Buy milk</p>
+              </div>
+              <span class="delete-button" onmousedown="return false">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+              </span>
+            </li>
+
+            <li class="lihiden">
+              <a href="" class="check_button" onmousedown="return false">
+                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              </a>
+              <div class="right">
+                <p contenteditable="true">Deme chanse profe, batalle mucho con el memorama y el api-weather</p>
+              </div>
+              <span class="delete-button" onmousedown="return false">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+              </span>
+            </li>
+            <li class="lihiden">
+              <a href="" class="check_button" onmousedown="return false">
+                <i class="fa fa-check-circle mark" aria-hidden="true"></i>
+              </a>
+              <div class="right">
+                <p contenteditable="true">Incluso le puse fuegos artificiales de felicitaciones</p>
+              </div>
+              <span class="delete-button" onmousedown="return false">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+              </span>
+            </li>
+
+          </ul>
+  
+        </div>
+      </div>
+      <ion-button (click)="agregarItem()" expand="full">Agregar Ítem</ion-button>
+    </div>
+    </div>
+    
+
 </ion-content>

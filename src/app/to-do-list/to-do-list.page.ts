@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./to-do-list.page.scss'],
 })
 export class ToDoListPage implements OnInit {
-
+  listaTareas: string[] = [];
   constructor() { }
 
   ngOnInit() {
   }
-
+// Función para agregar un nuevo elemento a la lista de tareas
+agregarItem() {
+  const nuevoItem = prompt('Ingrese el nuevo ítem:');
+  if (nuevoItem !== null && nuevoItem !== '') {
+    this.listaTareas.push(nuevoItem);
+  }
+  console.log(this.listaTareas);
+}
 }

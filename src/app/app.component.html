@@ -1,4 +1,23 @@
 <ion-app>
+  <ion-menu side="start" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item (click)="nav('/home')">
+          <ion-icon slot="start" name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+        <!-- Agrega más elementos del menú aquí -->
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+
+
   <ion-toolbar>
     <ion-title>{{titulo}}</ion-title>
     <ion-buttons>
@@ -25,6 +44,9 @@
       </ion-button>
       <ion-button (click)="nav('/memorama')">
         Memorama
+      </ion-button>
+      <ion-button (click)="nav('/to-do-list')">
+        TO-DO list
       </ion-button>
     </ion-buttons>
     
